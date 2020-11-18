@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <style>
+        header nav ul li {
+            padding: 0 20px;
+        }
+
+        .collapse-test {
+            text-align: center;
+        }
+
+        .tab-1 ul li {
+            padding: 0 20px;
+
+        }
+
+        .background {
+            background-image: url("img/bg.jpg");
+            width: 100%;
+            height: 500px;
+        }
+
+        .tab-4 h1{
+            color: white;
+        }
+        .tab-4 ul li a {
+            color: white;
+        }
+
+        .tab-4 ul li {
+            padding: 0 20px;
+
+        }
+
+        .tab-2 ul li {
+            padding: 0 20px;
+        }
+
+        .tab-3 ul li {
+            padding: 0 20px;
+            margin: 0 10px;
+
+        }
+
+        .tab-3 ul li a {
+            color: white;
+        }
+        body {
+            background: rgb(216, 211, 211);
+            
+        }
+        .carousel-test img {
+            width: 100%;
+            height: 80vh;
+        }
+        .carousel-test h5, p{
+            color: black;
+            font-weight:40px;
+        }
+        .pgbar div{
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="logo-area col-md-4">
+                    <h1>Logo</h1>
+                </div>
+                <div class="col-md-8">
+                    <nav class="navbar navbar-expand-lg">
+                        <ul class="navbar-nav">
+                            <li>
+                                <a href="#">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Menu</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Submenu 1</a></li>
+                                    <li><a href="#">Submenu 2</a></li>
+                                    <li><a href="#">Submenu 3</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">About</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact</a>
+                            </li>
+                        </ul>
+
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="collapse-test">
+        <a class="btn btn-info" data-toggle="collapse" href="#test"> Collaspe With Link </a>
+        <button class="btn btn-info" type="button" data-target="#test" data-toggle="collapse">Collaspe With
+            Button</button>
+        <div class="collapse" id="test">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio id architecto rerum commodi fugiat dicta
+            dolorum atque quas expedita quos nobis minima, porro quae vel sapiente ea sit, nulla hic?
+        </div>
+    </div>
+
+    <div class="tab-1">
+        <h1 style="text-align: center;">Tabs</h1>
+        <ul class="nav nav-tabs">
+            <li>
+                <a data-toggle="tab" href="#programing" class="active">Programing</a>
+            </li>
+            <li>
+                <a data-toggle="tab" href="#research">Research</a>
+            </li>
+            <li>
+                <a data-toggle="tab" href="#development">Development</a>
+            </li>
+            <li>
+                <a data-toggle="tab" href="#phases">Phases</a>
+            </li>
+        </ul>
+        <div class="tab-content">
+            <div id="programing" class="tab-pane fade in active">
+                A placeholder in programming code may also be used to indicate where specific code needs to be added,
+                but the programmer has not yet written the code. The placeholder reminds the programmer where to add
+                code, or can let other programmers know that additional code still needs to be added in general.
+            </div>
+            <div id="research" class="tab-pane fade">
+                What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem
+                Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a
+                galley of type and scrambled it to make a type specimen book it has?
+            </div>
+            <div id="development" class="tab-pane fade">
+                Generate Lorem Ipsum placeholder text for use in your graphic, print and web ... how Lorem Ipsum went
+                from scrambled Latin passage to ubiqitous dummy text. ... More recently the growth of web design has
+                helped proliferate lorem ipsum
+            </div>
+            <div id="phases" class="tab-pane fade">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum in soluta, corrupti perferendis
+                necessitatibus nesciunt iusto voluptatum a placeat similique. Assumenda ipsum ad laboriosam sed rem
+                nesciunt dolorum iste tempora.
+            </div>
+
+        </div>
+    </div>
+    <div class="background">
+        <div class="tab-4">
+            <h1 style="text-align: center;">Tabs with background</h1>
+            <ul class="nav nav-tabs">
+                <li>
+                    <a data-toggle="tab" href="#demo1" class="active">Programing</a>
+                </li>
+                <li>
+                    <a data-toggle="tab" href="#demo2">Research</a>
+                </li>
+                <li>
+                    <a data-toggle="tab" href="#demo3">Development</a>
+                </li>
+                <li>
+                    <a data-toggle="tab" href="#demo4">Phases</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div id="demo1" class="tab-pane fade in active">
+                    A placeholder in programming code may also be used to indicate where specific code needs to be
+                    added,
+                    but the programmer has not yet written the code. The placeholder reminds the programmer where to add
+                    code, or can let other programmers know that additional code still needs to be added in general.
+                </div>
+                <div id="demo2" class="tab-pane fade">
+                    What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem
+                    Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took
+                    a
+                    galley of type and scrambled it to make a type specimen book it has?
+                </div>
+                <div id="demo3" class="tab-pane fade">
+                    Generate Lorem Ipsum placeholder text for use in your graphic, print and web ... how Lorem Ipsum
+                    went
+                    from scrambled Latin passage to ubiqitous dummy text. ... More recently the growth of web design has
+                    helped proliferate lorem ipsum
+                </div>
+                <div id="demo4" class="tab-pane fade">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum in soluta, corrupti perferendis
+                    necessitatibus nesciunt iusto voluptatum a placeat similique. Assumenda ipsum ad laboriosam sed rem
+                    nesciunt dolorum iste tempora.
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="tab-2">
+        <h1 style="text-align: center;">Our Works</h1>
+        <ul class="nav nav-tabs">
+            <li>
+                <a data-toggle="tab" href="#all" class="active">All</a>
+            </li>
+            <li>
+                <a data-toggle="tab" href="#web">Web</a>
+            </li>
+            <li>
+                <a data-toggle="tab" href="#printing">Printing</a>
+            </li>
+            <li>
+                <a data-toggle="tab" href="#animation">Animation</a>
+            </li>
+        </ul>
+        <div class="tab-content">
+            <div id="all" class="tab-pane fade in active">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="img/1.png" alt="">
+                        <img src="img/2.png" alt="">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/3.png" alt="">
+                        <img src="img/4.png" alt="">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/5.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div id="web" class="tab-pane fade">
+                <img src="img/1.png" alt="">
+                <img src="img/2.png" alt="">
+            </div>
+            <div id="printing" class="tab-pane fade">
+                <img src="img/3.png" alt="">
+                <img src="img/4.png" alt="">
+            </div>
+            <div id="animation" class="tab-pane fade">
+                <img src="img/5.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="tab-3">
+        <h1 style="text-align: center;">Tabs with colums</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam facilis rerum assumenda, minus maiores illo
+            deleniti magni totam impedit accusamus asperiores dolor accusantium nesciunt odio ipsum ab hic molestiae
+            rem.</p>
+        <ul class="nav nav-tabs">
+            <li class="btn btn-info">
+                <a data-toggle="tab" href="#res">Responsive</a>
+            </li>
+            <li class="btn btn-info">
+                <a data-toggle="tab" href="#nocode">No coding</a>
+            </li>
+            <li class="btn btn-info">
+                <a data-toggle="tab" href="#unique" class="active">Unique</a>
+            </li>
+        </ul>
+        <div class="tab-content">
+
+            <div id="unique" class="tab-pane fade active">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h1>Logo</h1>
+                            <h2>Trenddy Website</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+                                assumenda nobis quas, veritatis iure eaque error labore, vero eum sint earum ut quam
+                                et incidunt adipisci quisquam. Sit, laboriosam? Asperiores!</p>
+                        </div>
+                        <div class="col-md-4">
+                            <h1>Logo</h1>
+                            <h2>Trenddy Website</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+                                assumenda nobis quas, veritatis iure eaque error labore, vero eum sint earum ut quam
+                                et incidunt adipisci quisquam. Sit, laboriosam? Asperiores!</p>
+                        </div>
+                        <div class="col-md-4">
+                            <h1>Logo</h1>
+                            <h2>Trenddy Website</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
+                                assumenda nobis quas, veritatis iure eaque error labore, vero eum sint earum ut quam
+                                et incidunt adipisci quisquam. Sit, laboriosam? Asperiores!</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <div id="nocode" class="tab-pane fade">
+                <img src="img/3.png" alt="">
+                <img src="img/4.png" alt="">
+            </div>
+            <div id="res" class="tab-pane fade">
+                <img src="img/5.png" alt="">
+            </div>
+        </div>
+    </div>
+<div class="carousel-test">
+    <div class="carousel slide" id="carouselExampleCaptions" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/1.jpg" alt="">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/demo.jpg" alt="">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>2 slide label</h5>
+                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/d.png" alt="">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>3 slide label</h5>
+                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+</div>
+<h1 style="text-align:center"> Progressbar</h1>
+    <div class="pgbar">
+        <div class="progress">
+            <div class="progress-bar" style="width:20%" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <div class="progress">
+            <div class="progress-bar" style="width:40%" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <div class="progress">
+            <div class="progress-bar" style="width:60%" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <div class="progress">
+            <div class="progress-bar" style="width:80%" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+    </div>
+
+    
+
+
+
+
+
+
+    <script src="js/JQuery.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
